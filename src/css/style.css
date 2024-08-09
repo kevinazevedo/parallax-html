@@ -19,10 +19,20 @@ h3 {
     text-align: center;
 }
 
+p {
+    margin-bottom: 20px;
+}
+
 /* Efeito Parallax */
-.caixa1, .caixa2 {
+.caixa1, .caixa2, .caixa3, .caixa4 {
+    position: relative;
     border: 1px solid blue;
     height: 100%;
+    opacity: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .caixa1 {
@@ -31,4 +41,29 @@ h3 {
 
 .caixa2 {
     background-image: url(../img/imagem2.jpg);
+}
+
+.caixa3 {
+    background-image: url(../img/imagem3.jpg);
+}
+
+.caixa4 {
+    background-image: url(../img/imagem4.jpg);
+}
+
+.conteudo-titulo {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo-titulo span.titulo {
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
 }
